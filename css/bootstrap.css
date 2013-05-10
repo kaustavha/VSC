@@ -289,7 +289,7 @@ a:focus {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 100%;
 }
 
 .span12 {
@@ -972,12 +972,12 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: 'Average Sans', sans-serif;
   font-size: 12px;
   color: #333333;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
 }
 
 code {
@@ -989,25 +989,27 @@ code {
 }
 
 pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 20px;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 128, .1);
+    border:2px solid black;
+    font-size: 14px;
+    font-family: 'Average Sans', sans-serif;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
-  white-space: pre-wrap;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  white-space: pre-wrap;   
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
 }
 
 pre.prettyprint {
-  margin-bottom: 20px;
+  border-radius: 20px;
+    background-color:rgba(0, 0, 128, .1);
+    border:2px solid black;
+    font-size: 14px;
+  font-family: 'Average Sans', sans-serif;
+
 }
 
 pre code {
@@ -6111,19 +6113,20 @@ a.badge:focus {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 30px;
   color: inherit;
+  border: 2px black;
   background-color: #eeeeee;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
 }
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1;
   letter-spacing: -1px;
   color: inherit;

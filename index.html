@@ -11,6 +11,8 @@
     <!-- Le styles -->
  <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
     <style>
 
     /* GLOBAL STYLES
@@ -21,26 +23,58 @@
       padding-bottom: 40px;
       color: #5a5a5a;
     }
-
+ .photo {
+	background-repeat: no-repeat;
+	position: relative;
+          -webkit-background-size: cover;
+             -moz-background-size: cover;
+               -o-background-size: cover;
+                  background-size: cover;
+                  width: 100%;
+                  height: 100%;
+          
+      }
+      .photo span {
+			bottom: 0;
+			color: white;			
+			font-size: 38px;
+			padding: 0px;
+			position: absolute;
+			text-shadow: 0 2px 0 black, 0 0 10px black;
+			width: 100%;
+                        height:100%;
+		}
+      .m {
+          background-image: url(img/marketing.jpg);     
+            background-size: cover;
+      }
+      .team {
+          backgroun-image: url(img/team.jpg);          
+      }
+      .contact {
+      background-images url(img/contact.jpg);
+      }
+    
 
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
 
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-        
-  margin:0;
+    .navbar-wrapper {          
+      margin:0;
       left: 0;
       right: 0;
-      z-index: 10;
-    
-     }
-     .navbar-wrapper.stuck {
-         position: fixed;
-         top:0;
-         margin:0;
-     }
+      z-index: 10;    
+     }    
+     .navbar-wrapper-stuck {          
+      position: fixed;
+      top:0;
+      margin:0;
+      left: 0;
+      right: 0;
+      z-index: 10;    
+     }    
     .navbar-wrapper .navbar {
 
     }
@@ -147,14 +181,14 @@
     ------------------------- */
 
     .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+      margin: 0px 0; /* Space out the Bootstrap <hr> more */      
     }
     .featurette {
       padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      margin-top: -85px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
     }
 
     /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -254,7 +288,49 @@
         font-size: 18px;
         line-height: 1.5;
       }
-
+      .body {          
+      }     
+      .stickit {
+       position: fixed;
+       top: 0;
+      }
+      .stickit-end {
+       bottom: 40px;
+       position: absolute;
+       right: 0;
+      }
+      .photo {
+	background-attachment: fixed;
+	
+	background-repeat: no-repeat;
+	
+	position: relative;
+        z-index: -1;     
+      }
+      .photo span {
+			bottom: 0;
+			color: white;
+			display: block;
+			left: 50%;
+			margin-left: -640px;
+			font-size: 38px;
+			padding: 10px;
+			position: absolute;
+			text-shadow: 0 2px 0 black, 0 0 10px black;
+			width: 1280px;
+		}
+      .m {
+          background-images: url(img/marketing.jpg);          
+      }
+      .team {
+          backgroun-images: url(img/team.jpg);          
+      }
+      .contact {
+      background-images: url(img/contact.jpg);
+    }
+    .team h1 {
+        font-family:'Milonga', cursive;
+    }
     }
     </style>
 
@@ -276,7 +352,7 @@
 
 
    
-
+      <div class="body">
 
 
     <!-- Carousel
@@ -320,7 +396,10 @@
 
  <!-- NAVBAR
     ================================================== -->
-    <div class="navbar-wrapper">
+  
+        
+     <div class="navbar-wrapper" id="nav_stick">
+      
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
@@ -336,7 +415,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#"><i class="icon-camera-retro"></i></a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -358,7 +437,8 @@
         </div><!-- /.navbar -->
 
       </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
+     </div><!-- /.navbar-wrapper -->
+   
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -370,49 +450,61 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
+          <h2>Fast</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
+          <h2>Easy</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
+          <h2>Profitable</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
+    </div>
 
 
-      <!-- START THE FEATURETTES -->
-
+      <!-- START THE FEATURETTES -->  
       <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+<div class="photo m" data-stellar-background-ratio="2">
+    <div class="container marketing">
+    
+       
+      <div class="featurette">     
+      
+            <img class="featurette-image pull-right" src="img/f1.jpg"> 
+            <div class="hero-unit"> 
+        <h2 class="featurette-heading">First featurette headling. </h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
+        </div>
+       </div>
+    </div>
+    </div> <!-- stellar bg -->
 
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+           <div class="hero-unit">
+        <img class="featurette-image pull-left" src="img/f2.jpg">
         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
+           </div>
+           </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+          <div class="hero-unit">
+          <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
       </div>
 
       <hr class="featurette-divider">
@@ -421,10 +513,7 @@
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+    
 
     </div><!-- /.container -->
 
@@ -447,17 +536,33 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/waypoints.js"></script>
-    <script src="js/waypoints-sticky.js"></script>
+    <script src="js/stellar.min.js"></script>
+    
     <script>
+      
       !function ($) {
         $(function(){
           // carousel demo
           $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-      $(document).ready(function() {
-	$('.navbar-wrapper').waypoint('sticky');      
+            })
+         }(window.jQuery)         
+    $('.navbar-wrapper').waypoint(function() {
+        $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck')
+    });
+	$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+              
     </script>   
     <script src="js/holder.js"></script>
-  </body>
+      </div> 
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+  </body> 
+     
 </html>
