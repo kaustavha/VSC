@@ -13,6 +13,9 @@
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+   
     <style>
 
     /* GLOBAL STYLES
@@ -26,6 +29,7 @@
  .photo {
 	background-repeat: no-repeat;
 	position: relative;
+        
           -webkit-background-size: cover;
              -moz-background-size: cover;
                -o-background-size: cover;
@@ -42,19 +46,175 @@
 			position: absolute;
 			text-shadow: 0 2px 0 black, 0 0 10px black;
 			width: 100%;
-                        height:100%;
+                        height:200%;
 		}
       .m {
           background-image: url(img/marketing.jpg);     
             background-size: cover;
       }
       .team {
-          backgroun-image: url(img/team.jpg);          
+          background-image: url(img/team.jpg);          
       }
       .contact {
-      background-images url(img/contact.jpg);
+      background-image: url(img/contact.jpg);
       }
-    
+      .gtxt { 
+      font-family: 'Milonga',cursive;
+      }
+      .featurette-heading { 
+      font-family: 'Milonga',cursive;
+      }
+     
+      /* code for css 3d experiment */
+    .tdcont {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      margin: 0 auto 40px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1200px;
+         -moz-perspective: 1200px;
+           -o-perspective: 1200px;
+              perspective: 1200px;
+    }
+
+    #box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+    }
+
+    #box figure {
+      display: block;
+      position: absolute;
+      border: 2px solid black;
+      line-height: 196px;
+      font-size: 90px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    #box.panels-backface-invisible figure {
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #box .front,
+    #box .back {
+      width: 296px;
+      height: 196px;
+    }
+
+    #box .right,
+    #box .left {
+      width: 96px;
+      height: 196px;
+      left: 100px;
+    }
+
+    #box .top,
+    #box .bottom {
+      width: 296px;
+      height: 96px;
+      top: 50px;
+      line-height: 96px;
+    }
+
+
+    #box .front  { background: hsla( 000, 100%, 50%, 0.7 ); }
+    #box .back   { background: hsla( 160, 100%, 50%, 0.7 ); }
+    #box .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
+    #box .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
+    #box .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
+    #box .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
+
+    #box .front  {
+      -webkit-transform: translateZ( 50px );
+         -moz-transform: translateZ( 50px );
+           -o-transform: translateZ( 50px );
+              transform: translateZ( 50px );
+    }
+    #box .back   {
+      -webkit-transform: rotateX( -180deg ) translateZ(  50px );
+         -moz-transform: rotateX( -180deg ) translateZ(  50px );
+           -o-transform: rotateX( -180deg ) translateZ(  50px );
+              transform: rotateX( -180deg ) translateZ(  50px );
+    }
+    #box .right {
+      -webkit-transform: rotateY(   90deg ) translateZ( 150px );
+         -moz-transform: rotateY(   90deg ) translateZ( 150px );
+           -o-transform: rotateY(   90deg ) translateZ( 150px );
+              transform: rotateY(   90deg ) translateZ( 150px );
+    }
+    #box .left {
+      -webkit-transform: rotateY(  -90deg ) translateZ( 150px );
+         -moz-transform: rotateY(  -90deg ) translateZ( 150px );
+           -o-transform: rotateY(  -90deg ) translateZ( 150px );
+              transform: rotateY(  -90deg ) translateZ( 150px );
+    }
+    #box .top {
+      -webkit-transform: rotateX(   90deg ) translateZ( 100px );
+         -moz-transform: rotateX(   90deg ) translateZ( 100px );
+           -o-transform: rotateX(   90deg ) translateZ( 100px );
+              transform: rotateX(   90deg ) translateZ( 100px );
+    }
+    #box .bottom {
+      -webkit-transform: rotateX(  -90deg ) translateZ( 100px );
+         -moz-transform: rotateX(  -90deg ) translateZ( 100px );
+           -o-transform: rotateX(  -90deg ) translateZ( 100px );
+              transform: rotateX(  -90deg ) translateZ( 100px );
+    }
+
+
+    #box.show-front {
+      -webkit-transform: translateZ(  -50px );
+         -moz-transform: translateZ(  -50px );
+           -o-transform: translateZ(  -50px );
+              transform: translateZ(  -50px );
+    }
+    #box.show-back {
+      -webkit-transform: translateZ( -50px ) rotateX( -180deg );
+         -moz-transform: translateZ( -50px ) rotateX( -180deg );
+           -o-transform: translateZ( -50px ) rotateX( -180deg );
+              transform: translateZ( -50px ) rotateX( -180deg );
+    }
+    #box.show-right {
+      -webkit-transform: translateZ( -150px ) rotateY(  -90deg );
+         -moz-transform: translateZ( -150px ) rotateY(  -90deg );
+           -o-transform: translateZ( -150px ) rotateY(  -90deg );
+              transform: translateZ( -150px ) rotateY(  -90deg );
+    }
+    #box.show-left {
+      -webkit-transform: translateZ( -150px ) rotateY(   90deg );
+         -moz-transform: translateZ( -150px ) rotateY(   90deg );
+           -o-transform: translateZ( -150px ) rotateY(   90deg );
+              transform: translateZ( -150px ) rotateY(   90deg );
+    }
+    #box.show-top {
+      -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
+         -moz-transform: translateZ( -100px ) rotateX(  -90deg );
+           -o-transform: translateZ( -100px ) rotateX(  -90deg );
+              transform: translateZ( -100px ) rotateX(  -90deg );
+    }
+    #box.show-bottom {
+      -webkit-transform: translateZ( -100px ) rotateX(   90deg );
+         -moz-transform: translateZ( -100px ) rotateX(   90deg );
+           -o-transform: translateZ( -100px ) rotateX(   90deg );
+              transform: translateZ( -100px ) rotateX(   90deg );
+    }
+
+
 
 
     /* CUSTOMIZE THE NAVBAR
@@ -104,8 +264,15 @@
     .navbar .btn-navbar {
       margin-top: 10px;
     }
-
-
+    .btn-success {      
+       float:right; !important
+       background-color
+    }
+      .navbar-inner {
+        border-radius: 0;
+        margin: 0px 0;
+        background-color: rgba(204, 204, 204, .5);
+      }
 
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
@@ -221,6 +388,7 @@
       .navbar-inner {
         border-radius: 0;
         margin: 0px 0;
+        background-color: #a3a3a3;
       }
 
       .carousel .item {
@@ -327,10 +495,7 @@
       }
       .contact {
       background-images: url(img/contact.jpg);
-    }
-    .team h1 {
-        font-family:'Milonga', cursive;
-    }
+    }   
     }
     </style>
 
@@ -353,7 +518,7 @@
 
    
       <div class="body">
-
+<!-- css 3d experiment -->
 
     <!-- Carousel
     ================================================== -->
@@ -363,8 +528,8 @@
           <img src="img/slide-01.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>We empower SMBs!</h1>
+              <p class="lead">Our innovative site generator lowers the barrier for entry to a web-presence for small business owners.</p>
               <a class="btn btn-large btn-primary" href="#">Sign up today</a>
             </div>
           </div>
@@ -415,22 +580,11 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#"><i class="icon-camera-retro"></i></a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="#" class="active" id="road" rel="popover" data-content="Let us help" data-original-title="The road to success"><i class="icon-road"></i></a></li>
+                <li><a href="#about"><i class="icon-group"></i></a></li>
+                <li><a href="#contact"><i class="icon-phone"></i></a></li>
+                <div class="span3 offset5">  <li><a class="btn btn-large btn-success" href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
+                </div>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -449,30 +603,31 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Fast</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <img class="img-circle" data-src="holder.js/140x140" src="img/c1.jpg">
+          <h2 class="gtxt">Fast</h2>
+          <p>Normally, building a website would cost several hundred dollars or several hours with drag n' drop builders, or days if you wanted to code it up. Not anymore!<br> <strong>Welcome to the future. <br> Instant Website Creation</strong> </p>
+        
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Easy</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <img class="img-circle" data-src="holder.js/140x140" src="img/c2.jpg">
+          <h2 class="gtxt">Simple</h2>
+          <p>Even if you managed to build a site, you still need to worry about hosting it, getting a domain name, site E-mail and getting search engines to send you customers. <br> <strong>We take care of all that so you don't have to. </strong></p>
+        
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Profitable</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <img class="img-circle" data-src="holder.js/140x140" src="img/c3.jpg">
+          <h2 class="gtxt">Profitable</h2>
+          <p>We live in a world where everyones online. You can't afford to live in the past. Websites generate revenue by attracting online consumers, and verifying the legitimacy of your business to more skeptical customers.<br><strong>Augment your business today! </strong> </p>
+          
         </div><!-- /.span4 -->
-      </div><!-- /.row -->
+      </div><!-- /.row 
+      --><p style="text-align: center"><a class="btn btn-large btn-primary span12"  href="">Get a web-site! &raquo;</a></p>
     </div>
 
 
       <!-- START THE FEATURETTES -->  
       <hr class="featurette-divider">
-<div class="photo m" data-stellar-background-ratio="2">
+<div class="photo m" data-stellar-background-ratio="0.5">
     <div class="container marketing">
     
        
@@ -480,22 +635,26 @@
       
             <img class="featurette-image pull-right" src="img/f1.jpg"> 
             <div class="hero-unit"> 
-        <h2 class="featurette-heading">First featurette headling. </h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">How awesome are these websites?</h2>
+        <p class="lead">Sites built with our proprietary platform are backwards compatible, so people on old browsers can view them, and cross platform, meaning they work on any screen you can find, and it'll change to fit! We also optimize them to run fast.</p>
         </div>
        </div>
     </div>
     </div> <!-- stellar bg -->
 
       <hr class="featurette-divider">
-
+    <div class="photo team" data-stellar-background-ratio="0.75">
+         <div class="container marketing">
       <div class="featurette">
-           <div class="hero-unit">
+    
         <img class="featurette-image pull-left" src="img/f2.jpg">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="hero-unit">
+        <h2 class="featurette-heading">But what if I have trouble?</h2>
+        <p class="lead">Well it's incredibly easy, and it's no small feat to break our system, but we have an experienced team manning the phones. We care for our customers, and expect the un-expected.</p>
            </div>
-           </div>
+      </div>
+         </div>
+      </div>
 
       <hr class="featurette-divider">
 
@@ -537,6 +696,8 @@
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/stellar.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/rotatebox.js"></script>
     
     <script>
       
@@ -555,6 +716,9 @@
 				verticalOffset: 40
 			});
 		});
+                $("#road").hover(function() {            
+                  $("#road").popover();
+              });
               
     </script>   
     <script src="js/holder.js"></script>

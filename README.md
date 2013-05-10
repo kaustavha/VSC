@@ -10,7 +10,10 @@ Plans:
 waypoints.js FTW!
 Use stellar.js to implement parallax scroll (done)
 Use Bootstrap 2.3.1 (current tested release) for responsiveness 
-Use BootStrap marketing theme as start. (directory structure up)
+Use BootStrap marketing theme as start. (directory structure set up)
+FontAwesome toolbar icons with tooltips( still working on the tooltips)
+CSS 3D --> no luck so far
+(look at twitters bootstrap documentation , get checkboxes)
 
 
 Production roadmap(planned):
