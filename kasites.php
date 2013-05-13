@@ -35,7 +35,7 @@
                -o-background-size: cover;
                   background-size: cover;
                   width: 100%;
-                  height: 100%;
+                  height: 200%;
           
       }
       .photo span {
@@ -64,7 +64,9 @@
       .featurette-heading { 
       font-family: 'Milonga',cursive;
       }
-     
+      .contact{
+        margin-top: 150px;
+      }
       /* code for css 3d experiment */
     .tdcont {
       width: 300px;
@@ -76,8 +78,7 @@
          -moz-perspective: 1200px;
            -o-perspective: 1200px;
               perspective: 1200px;
-    }
-
+    }  
     #box {
       width: 100%;
       height: 100%;
@@ -554,7 +555,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="../assets/img/examples/slide-03.jpg" alt="">
+          <img src="img/slide-03.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -592,7 +593,7 @@
                 <li><a href="#road" class="active" id="road" rel="popover" data-content="Let us help" data-original-title="The road to success"><i class="icon-road"></i></a></li>
                 <li><a href="#about"><i class="icon-group"></i></a></li>
                 <li><a href="#contact"><i class="icon-phone"></i></a></li>
-                <div class="span3 offset5">  <li><a class="btn btn-large btn-success" href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
+                <div class="span3 offset5">  <li><a class="btn btn-success" href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
                 </div>
               </ul>
             </div><!--/.nav-collapse -->
@@ -612,82 +613,166 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140" src="img/c1.jpg">
+          <img class="img-circle" src="img/c1.jpg">
           <h2 class="gtxt">Fast</h2>
           <p>Normally, building a website would cost several hundred dollars or several hours with drag n' drop builders, or days if you wanted to code it up. Not anymore!<br> <strong>Welcome to the future. <br> Instant Website Creation</strong> </p>
         
         </div><!-- /.span4 -->
         <div class="span4 simple">
-          <img class="img-circle" data-src="holder.js/140x140" src="img/c2.jpg">
+          <img class="img-circle" src="img/c2.jpg">
           <h2 class="gtxt">Simple</h2>
           <p>Even if you managed to build a site, you still need to worry about hosting it, getting a domain name, site E-mail and getting search engines to send you customers. <br> <strong>We take care of all that so you don't have to. </strong></p>
         
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140" src="img/c3.jpg">
+          <img class="img-circle" src="img/c3.jpg">
           <h2 class="gtxt">Profitable</h2>
           <p>We live in a world where everyones online. You can't afford to live in the past. Websites generate revenue by attracting online consumers, and verifying the legitimacy of your business to more skeptical customers.<br><strong>Augment your business today! </strong> </p>
           
         </div><!-- /.span4 -->
       </div><!-- /.row 
       --><!--<p ><a class="btn btn-large btn-primary span12"  href="">Get a web-site! &raquo;</a></p> --><p style="text-align: center;">
-       <a class="btn circle" href="">Get a site! &rsaquo;</a></p>
-    </div>
-
+       <a class="circle" href="">Get a site! &rsaquo;</a></p>      
+    </div> 
+    <hr class="featurette-divider">
+    <div><p> Or maybe you want to be a reseller? Or have a large number of clients who could use web-sites.</p></div>
 
       <!-- START THE FEATURETTES -->  
-      <hr class="featurette-divider">
-<div class="photo m1" data-stellar-background-ratio="2">
+     <hr class="featurette-divider">
+<div class="photo m1" data-stellar-background-ratio="1.2">
     <div class="container marketing">
     
        
       <div class="featurette one">     
       
             <img class="featurette-image pull-right" src="img/f1.jpg"> 
-            <div class="hero-unit"> 
-        <h2 class="featurette-heading">How awesome are these websites?</h2>
-        <p class="lead">Sites built with our proprietary platform are backwards compatible, so people on old browsers can view them, and cross platform, meaning they work on any screen you can find, and it'll change to fit! We also optimize them to run fast.</p>
+            <div class="hero-unit" > 
+        <h2 class="featurette-heading">Why?</h2>
+        <p class="lead">A web presence has become a necessity in todays world. Educated customers will definitely search for online information pertaining to the situation to make better decisions. Whether it's a small law firm, or dentistry office, or a small business making wedding invitations or distributing flyers, the lack of a website renders you a second choice to your more tech-savvy competitors. <br> Websites also act to establish a level of legitimacy for the business. It can be further utilized as a marketing, revenue generating or communication channel. </p>
         </div>
        </div>
     </div>
     </div> <!-- stellar bg -->
-<div class="span4 offset5">
-  hihih
-</div>
      
-    <div class="photo m2" data-stellar-background-ratio="1.1">
+    <div class="photo m2" data-stellar-background-ratio="1.2">
          <div class="container marketing">
-      <div class="featurette">
+             <div class="row-fluid">
+                <div class="featurette span5" >     
+      
+            <img class="featurette-image pull-left" src="img/f1.jpg"> 
+            <div class="hero-unit" > 
+        <h2 class="featurette-heading">How awesome are these websites?</h2>
+        <p class="lead">We take care of everything in the back-end, including hosting, SEO, responsiveness(they're different on a phone!), browser compatibility, load-speed optimizations and such so you don't have to. And our advanced editor lets you change elements on the page itself. Easier than wordpress!
+        We also help you get a domain name and company E-mail addresses! </p>
+        </div>
+       </div>
+                <div class="featurette span5 offset2" >
     
-        <img class="featurette-image pull-left" src="img/f2.jpg">
-        <div class="hero-unit">
+        <img class="featurette-image pull-right" src="img/f2.jpg">
+            <div class="hero-unit" >
         <h2 class="featurette-heading">But what if I have trouble?</h2>
-        <p class="lead">Well it's incredibly easy, and it's no small feat to break our system, but we have an experienced team manning the phones. We care for our customers, and expect the un-expected.</p>
+        <p class="lead">We've designed our service from the start to be simple, appealing and easy to use, choosing to not overload it with features for the sake of the consumer. But we expect the un-expected and have a team of IT professionals manning our phones in case of emergencies. </p>
            </div>
-      </div>
+              </div>     
+            </div>
          </div>
       </div>
 
       <hr class="featurette-divider">
-
+      <div class="container marketing">          
       <div class="featurette">
-          <div class="hero-unit">
-          <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+          
+          <img class="featurette-image pull-right" src="img/f1.jpg">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
       </div>
 
       <hr class="featurette-divider">
-
+      
+      
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
     
 
-    </div><!-- /.container -->
-  </div> <!-- end road -->
+    </div><!-- end road -->
+    
+    <div class="container" id='contact'>
+
+      <div class="row-fluid">   
+          
+        <div class="span6">
+            
+   <h1>Get in touch!</h1>        
+        <?php 
+        // check for a successful form post  
+        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";        
+        // check for a form error  
+        elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
+        ?>  
+
+          <form method="POST" action="contact-form-submission.php" class="form-horizontal">
+
+            <div class="control-group">
+              <label class="control-label" for="input1"><i class="icon-user"></i> Full Name</label>
+              <div class="controls controls-row">
+                <input type="text" name="contact_name" class="input-xxlarge" id="input1" placeholder="Cool Person">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="inputEmail"><i class="icon-envelope"></i> Email</label>
+              <div class="controls">
+                <input type="text" class="input-xxlarge" name="contact_email" id="input2" placeholder="you@yourdomain.com">
+              </div>
+            </div>
+
+                <div class="control-group">
+              <label class="control-label" for="inputEmail"><i class="icon-phone"></i> Phone Number</label>
+              <div class="controls">
+                <input type="text" class="input-xxlarge" name="contact_number" id="input3" placeholder="Hey! What's your number?">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="inputEmail"><i class="icon-question-sign"></i> Subject</label>
+              <div class="controls">
+                <input type="text" class="input-xxlarge" name="contact_subject" id="input4" placeholder="What's up?">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="inputEmail"><i class="icon-pencil"></i> Message</label>
+              <div class="controls">
+                <textarea rows="6" id="input5" class="input-xxlarge" placeholder="What's on your mind?"></textarea>
+              </div>
+            </div>
+
+            <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-primary">Send it!</button>
+    </div>
+            </div>
+          </form>
+        </div><!-- end left -->
+
+        <div class="span4 offset2">
+          <div class="well contact">
+              <strong>Address: </strong>1200 Eglington Ave. East, Toronto, Ontario
+              <br>
+              <strong>Call Us: </strong>1-855-12345-12
+              <br>
+              <strong>E-Mail: </strong><a href="support@kasites.com">support@kasites.com</a>       
+
+          </div>
+        </div>
+   </div>       
+  </div> <!-- /.container -->
+      </div>
+ 
+  
 
 
 
@@ -728,7 +813,7 @@
 	$(function(){
 			$.stellar({
 				horizontalScrolling: false,
-				verticalOffset: 40
+				verticalOffset: 0
 			});
 		});
                 $("#road").hover(function() {            
@@ -736,8 +821,10 @@
               });
            $('.navbar').scrollspy();   
            $('.span4.simple').waypoint(function() {
-        $(".featurette.one").fadeIn();
+        $(".featurette.one").fadeIn(1100);
       });
+      $('.hero-unit').Stellar();
+  
     </script>   
     <script src="js/holder.js"></script>
       </div> 
