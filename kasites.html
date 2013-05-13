@@ -48,15 +48,15 @@
 			width: 100%;
                         height:200%;
 		}
-      .m {
-          background-image: url(img/marketing.jpg);     
+      .m1 {
+          background-image: url(img/road1.jpg);     
             background-size: cover;
       }
-      .team {
-          background-image: url(img/team.jpg);          
+      .m2 {
+          background-image: url(img/road2.jpg);          
       }
-      .contact {
-      background-image: url(img/contact.jpg);
+      .m3 {
+      background-image: url(img/road3.jpg);
       }
       .gtxt { 
       font-family: 'Milonga',cursive;
@@ -272,6 +272,15 @@
         border-radius: 0;
         margin: 0px 0;
         background-color: rgba(204, 204, 204, .5);
+      }
+      .circle {
+        border-radius:50%;
+        margin-bottom: -60px;
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+        text-align: bottom;
+
       }
 
     /* CUSTOMIZE THE CAROUSEL
@@ -512,7 +521,7 @@
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
 
 
@@ -580,7 +589,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="#" class="active" id="road" rel="popover" data-content="Let us help" data-original-title="The road to success"><i class="icon-road"></i></a></li>
+                <li><a href="#road" class="active" id="road" rel="popover" data-content="Let us help" data-original-title="The road to success"><i class="icon-road"></i></a></li>
                 <li><a href="#about"><i class="icon-group"></i></a></li>
                 <li><a href="#contact"><i class="icon-phone"></i></a></li>
                 <div class="span3 offset5">  <li><a class="btn btn-large btn-success" href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
@@ -597,7 +606,7 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<div id="road">
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
@@ -608,7 +617,7 @@
           <p>Normally, building a website would cost several hundred dollars or several hours with drag n' drop builders, or days if you wanted to code it up. Not anymore!<br> <strong>Welcome to the future. <br> Instant Website Creation</strong> </p>
         
         </div><!-- /.span4 -->
-        <div class="span4">
+        <div class="span4 simple">
           <img class="img-circle" data-src="holder.js/140x140" src="img/c2.jpg">
           <h2 class="gtxt">Simple</h2>
           <p>Even if you managed to build a site, you still need to worry about hosting it, getting a domain name, site E-mail and getting search engines to send you customers. <br> <strong>We take care of all that so you don't have to. </strong></p>
@@ -621,17 +630,18 @@
           
         </div><!-- /.span4 -->
       </div><!-- /.row 
-      --><p style="text-align: center"><a class="btn btn-large btn-primary span12"  href="">Get a web-site! &raquo;</a></p>
+      --><!--<p ><a class="btn btn-large btn-primary span12"  href="">Get a web-site! &raquo;</a></p> --><p style="text-align: center;">
+       <a class="btn circle" href="">Get a site! &rsaquo;</a></p>
     </div>
 
 
       <!-- START THE FEATURETTES -->  
       <hr class="featurette-divider">
-<div class="photo m" data-stellar-background-ratio="0.5">
+<div class="photo m1" data-stellar-background-ratio="2">
     <div class="container marketing">
     
        
-      <div class="featurette">     
+      <div class="featurette one">     
       
             <img class="featurette-image pull-right" src="img/f1.jpg"> 
             <div class="hero-unit"> 
@@ -641,9 +651,11 @@
        </div>
     </div>
     </div> <!-- stellar bg -->
-
-      <hr class="featurette-divider">
-    <div class="photo team" data-stellar-background-ratio="0.75">
+<div class="span4 offset5">
+  hihih
+</div>
+     
+    <div class="photo m2" data-stellar-background-ratio="1.1">
          <div class="container marketing">
       <div class="featurette">
     
@@ -675,6 +687,7 @@
     
 
     </div><!-- /.container -->
+  </div> <!-- end road -->
 
 
 
@@ -700,7 +713,9 @@
     <script src="js/rotatebox.js"></script>
     
     <script>
-      
+       $(function() {
+            $(".featurette.one").hide();
+          });
       !function ($) {
         $(function(){
           // carousel demo
@@ -719,7 +734,10 @@
                 $("#road").hover(function() {            
                   $("#road").popover();
               });
-              
+           $('.navbar').scrollspy();   
+           $('.span4.simple').waypoint(function() {
+        $(".featurette.one").fadeIn();
+      });
     </script>   
     <script src="js/holder.js"></script>
       </div> 
