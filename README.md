@@ -24,4 +24,5 @@ Start, pull page, setup >> Get effects functioning >> add marketing information 
 
 1 day - 2 days - 1-4 days - 1-2 day - 1 week
 
-I'll possibly host test / beta @ kaustavha.github.io/vsc
+in case I forget
+: Contact info is still dummy, 2nd featurette is dummy, and carousel is dummy. 

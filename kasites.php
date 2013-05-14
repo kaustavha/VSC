@@ -53,7 +53,10 @@
             background-size: cover;
       }
       .m2 {
-          background-image: url(img/road2.jpg);          
+          background-image: url(img/road2.jpg);
+          background-size: cover;
+          padding-top: 50px;
+          height: 200%;
       }
       .m3 {
       background-image: url(img/road3.jpg);
@@ -590,10 +593,10 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="#road" class="active" id="road" rel="popover" data-content="Let us help" data-original-title="The road to success"><i class="icon-road"></i></a></li>
-                <li><a href="#about"><i class="icon-group"></i></a></li>
-                <li><a href="#contact"><i class="icon-phone"></i></a></li>
-                <div class="span3 offset5">  <li><a class="btn btn-success" href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
+                <li><a href="#road" id="rd" data-toggle="tooltip" title="The road to success"><i class="icon-road"></i></a></li>
+                <li><a href="#about" id="abt" data-toggle="tooltip" title="Our Partners"><i class="icon-group"></i></a></li>
+                <li><a href="#contact" id="cntct" data-toggle="tooltip" title="Contact Us"><i class="icon-phone"></i></a></li>
+                <div class="span3 offset5">  <li><a class="btn btn-success " href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
                 </div>
               </ul>
             </div><!--/.nav-collapse -->
@@ -626,8 +629,8 @@
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="img/c3.jpg">
-          <h2 class="gtxt">Profitable</h2>
-          <p>We live in a world where everyones online. You can't afford to live in the past. Websites generate revenue by attracting online consumers, and verifying the legitimacy of your business to more skeptical customers.<br><strong>Augment your business today! </strong> </p>
+          <h2 class="gtxt">Economical</h2>
+          <p>We live in a world where everyones online. You can't afford to live in the past. Websites generate revenue by attracting online consumers, and verifying the legitimacy of your business to more skeptical customers. And you can make a few bucks off of adwords as well!<br><strong>Augment your business today! </strong> </p>
           
         </div><!-- /.span4 -->
       </div><!-- /.row 
@@ -638,29 +641,37 @@
     <div><p> Or maybe you want to be a reseller? Or have a large number of clients who could use web-sites.</p></div>
 
       <!-- START THE FEATURETTES -->  
-     <hr class="featurette-divider">
-<div class="photo m1" data-stellar-background-ratio="1.2">
-    <div class="container marketing">
-    
+     <hr class="featurette-divider" data-stellar-ratio="2">
+  <div class="photo m1" data-stellar-background-ratio="2">
+    <div class="container marketing" >
+  
        
-      <div class="featurette one">     
+      <div class="featurette one" >     
       
             <img class="featurette-image pull-right" src="img/f1.jpg"> 
-            <div class="hero-unit" > 
+            <div class="hero-unit" data-stellar-ratio="2"> 
         <h2 class="featurette-heading">Why?</h2>
         <p class="lead">A web presence has become a necessity in todays world. Educated customers will definitely search for online information pertaining to the situation to make better decisions. Whether it's a small law firm, or dentistry office, or a small business making wedding invitations or distributing flyers, the lack of a website renders you a second choice to your more tech-savvy competitors. <br> Websites also act to establish a level of legitimacy for the business. It can be further utilized as a marketing, revenue generating or communication channel. </p>
         </div>
        </div>
-    </div>
+    </div>    
     </div> <!-- stellar bg -->
-     
-    <div class="photo m2" data-stellar-background-ratio="1.2">
-         <div class="container marketing">
+    
+       <div class="container marketing" data-stellar-background-ratio="2">          
+      <div class="featurette">
+          
+          <img class="featurette-image pull-right" src="img/f1.jpg">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      </div>
+    <div class="photo m2" data-stellar-background-ratio="1">
+         <div class="container marketing" >
              <div class="row-fluid">
                 <div class="featurette span5" >     
       
             <img class="featurette-image pull-left" src="img/f1.jpg"> 
-            <div class="hero-unit" > 
+            <div class="hero-unit"> 
         <h2 class="featurette-heading">How awesome are these websites?</h2>
         <p class="lead">We take care of everything in the back-end, including hosting, SEO, responsiveness(they're different on a phone!), browser compatibility, load-speed optimizations and such so you don't have to. And our advanced editor lets you change elements on the page itself. Easier than wordpress!
         We also help you get a domain name and company E-mail addresses! </p>
@@ -669,7 +680,7 @@
                 <div class="featurette span5 offset2" >
     
         <img class="featurette-image pull-right" src="img/f2.jpg">
-            <div class="hero-unit" >
+        <div class="hero-unit" >
         <h2 class="featurette-heading">But what if I have trouble?</h2>
         <p class="lead">We've designed our service from the start to be simple, appealing and easy to use, choosing to not overload it with features for the sake of the consumer. But we expect the un-expected and have a team of IT professionals manning our phones in case of emergencies. </p>
            </div>
@@ -679,14 +690,7 @@
       </div>
 
       <hr class="featurette-divider">
-      <div class="container marketing">          
-      <div class="featurette">
-          
-          <img class="featurette-image pull-right" src="img/f1.jpg">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      </div>
+    
 
       <hr class="featurette-divider">
       
@@ -762,7 +766,7 @@
           <div class="well contact">
               <strong>Address: </strong>1200 Eglington Ave. East, Toronto, Ontario
               <br>
-              <strong>Call Us: </strong>1-855-12345-12
+              <strong>Call Us: </strong><a href="callto:18551234512">1-855-12345-12</a>
               <br>
               <strong>E-Mail: </strong><a href="support@kasites.com">support@kasites.com</a>       
 
@@ -810,12 +814,7 @@
     $('.navbar-wrapper').waypoint(function() {
         $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck')
     });
-	$(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 0
-			});
-		});
+	
                 $("#road").hover(function() {            
                   $("#road").popover();
               });
@@ -823,8 +822,10 @@
            $('.span4.simple').waypoint(function() {
         $(".featurette.one").fadeIn(1100);
       });
-      $('.hero-unit').Stellar();
-  
+      $.stellar();
+      $('#rd').tooltip();
+         $('#cntct').tooltip();
+            $('#abt').tooltip();
     </script>   
     <script src="js/holder.js"></script>
       </div> 
