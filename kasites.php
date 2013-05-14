@@ -70,157 +70,17 @@
       .contact{
         margin-top: 150px;
       }
-      /* code for css 3d experiment */
-    .tdcont {
-      width: 300px;
-      height: 200px;
-      position: relative;
-      margin: 0 auto 40px;
-      border: 1px solid #CCC;
-      -webkit-perspective: 1200px;
-         -moz-perspective: 1200px;
-           -o-perspective: 1200px;
-              perspective: 1200px;
-    }  
-    #box {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-         -moz-transform-style: preserve-3d;
-           -o-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-      -webkit-transition: -webkit-transform 1s;
-         -moz-transition: -moz-transform 1s;
-           -o-transition: -o-transform 1s;
-              transition: transform 1s;
-    }
-
-    #box figure {
-      display: block;
-      position: absolute;
-      border: 2px solid black;
-      line-height: 196px;
-      font-size: 90px;
-      text-align: center;
-      font-weight: bold;
-      color: white;
-    }
-
-    #box.panels-backface-invisible figure {
-      -webkit-backface-visibility: hidden;
-         -moz-backface-visibility: hidden;
-           -o-backface-visibility: hidden;
-              backface-visibility: hidden;
-    }
-
-    #box .front,
-    #box .back {
-      width: 296px;
-      height: 196px;
-    }
-
-    #box .right,
-    #box .left {
-      width: 96px;
-      height: 196px;
-      left: 100px;
-    }
-
-    #box .top,
-    #box .bottom {
-      width: 296px;
-      height: 96px;
-      top: 50px;
-      line-height: 96px;
-    }
-
-
-    #box .front  { background: hsla( 000, 100%, 50%, 0.7 ); }
-    #box .back   { background: hsla( 160, 100%, 50%, 0.7 ); }
-    #box .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
-    #box .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
-    #box .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
-    #box .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
-
-    #box .front  {
-      -webkit-transform: translateZ( 50px );
-         -moz-transform: translateZ( 50px );
-           -o-transform: translateZ( 50px );
-              transform: translateZ( 50px );
-    }
-    #box .back   {
-      -webkit-transform: rotateX( -180deg ) translateZ(  50px );
-         -moz-transform: rotateX( -180deg ) translateZ(  50px );
-           -o-transform: rotateX( -180deg ) translateZ(  50px );
-              transform: rotateX( -180deg ) translateZ(  50px );
-    }
-    #box .right {
-      -webkit-transform: rotateY(   90deg ) translateZ( 150px );
-         -moz-transform: rotateY(   90deg ) translateZ( 150px );
-           -o-transform: rotateY(   90deg ) translateZ( 150px );
-              transform: rotateY(   90deg ) translateZ( 150px );
-    }
-    #box .left {
-      -webkit-transform: rotateY(  -90deg ) translateZ( 150px );
-         -moz-transform: rotateY(  -90deg ) translateZ( 150px );
-           -o-transform: rotateY(  -90deg ) translateZ( 150px );
-              transform: rotateY(  -90deg ) translateZ( 150px );
-    }
-    #box .top {
-      -webkit-transform: rotateX(   90deg ) translateZ( 100px );
-         -moz-transform: rotateX(   90deg ) translateZ( 100px );
-           -o-transform: rotateX(   90deg ) translateZ( 100px );
-              transform: rotateX(   90deg ) translateZ( 100px );
-    }
-    #box .bottom {
-      -webkit-transform: rotateX(  -90deg ) translateZ( 100px );
-         -moz-transform: rotateX(  -90deg ) translateZ( 100px );
-           -o-transform: rotateX(  -90deg ) translateZ( 100px );
-              transform: rotateX(  -90deg ) translateZ( 100px );
-    }
-
-
-    #box.show-front {
-      -webkit-transform: translateZ(  -50px );
-         -moz-transform: translateZ(  -50px );
-           -o-transform: translateZ(  -50px );
-              transform: translateZ(  -50px );
-    }
-    #box.show-back {
-      -webkit-transform: translateZ( -50px ) rotateX( -180deg );
-         -moz-transform: translateZ( -50px ) rotateX( -180deg );
-           -o-transform: translateZ( -50px ) rotateX( -180deg );
-              transform: translateZ( -50px ) rotateX( -180deg );
-    }
-    #box.show-right {
-      -webkit-transform: translateZ( -150px ) rotateY(  -90deg );
-         -moz-transform: translateZ( -150px ) rotateY(  -90deg );
-           -o-transform: translateZ( -150px ) rotateY(  -90deg );
-              transform: translateZ( -150px ) rotateY(  -90deg );
-    }
-    #box.show-left {
-      -webkit-transform: translateZ( -150px ) rotateY(   90deg );
-         -moz-transform: translateZ( -150px ) rotateY(   90deg );
-           -o-transform: translateZ( -150px ) rotateY(   90deg );
-              transform: translateZ( -150px ) rotateY(   90deg );
-    }
-    #box.show-top {
-      -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
-         -moz-transform: translateZ( -100px ) rotateX(  -90deg );
-           -o-transform: translateZ( -100px ) rotateX(  -90deg );
-              transform: translateZ( -100px ) rotateX(  -90deg );
-    }
-    #box.show-bottom {
-      -webkit-transform: translateZ( -100px ) rotateX(   90deg );
-         -moz-transform: translateZ( -100px ) rotateX(   90deg );
-           -o-transform: translateZ( -100px ) rotateX(   90deg );
-              transform: translateZ( -100px ) rotateX(   90deg );
-    }
-
-
-
-
+      .stellar-hero{
+          position: relative !important;
+          top:0 !important;
+          left:0 !important;
+          z-index:0 !important;
+      }
+      .img-circle{
+          height: 250px;
+          width: 250px;
+      }
+   
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
 
@@ -266,26 +126,72 @@
 
     /* Offset the responsive button for proper vertical alignment */
     .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-    .btn-success {      
-       float:right; !important
-       background-color
+      margin-top: 10px; 
+      float:right;
+    }    
+    .navbar .btn {
+    margin-top: 10px;
+    float: right;
     }
       .navbar-inner {
         border-radius: 0;
         margin: 0px 0;
         background-color: rgba(204, 204, 204, .5);
       }
-      .circle {
-        border-radius:50%;
-        margin-bottom: -60px;
-        width: 100px;
-        height: 100px;
-        font-size: 30px;
-        text-align: bottom;
+      
+    @-webkit-keyframes greenPulse {
+from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
 
-      }
+.button {    
+  text-align:center;
+  vertical-align:text-center;
+  display: inline-block;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+      -moz-animation-name: greenPulse;
+      -moz-animation-duration: 1s;
+      -moz-animation-iteration-count: infinite;
+          animation-name: greenPulse;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+   border-top: 1px solid #000000;
+   background: #65d66c;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e9c5c), to(#65d66c));
+   background: -webkit-linear-gradient(top, #3e9c5c, #65d66c);
+   background: -moz-linear-gradient(top, #3e9c5c, #65d66c);
+   background: -ms-linear-gradient(top, #3e9c5c, #65d66c);
+   background: -o-linear-gradient(top, #3e9c5c, #65d66c);
+   padding: 12px 24px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 19px;
+   font-family: 'Milonga',cursive;
+   text-decoration: none;
+   vertical-align: middle;
+   height: 100px;
+   width: 100px;
+   margin-bottom: -60px;
+   z-index: 10000; 
+   }
+.button:hover {
+   border-top-color: #026b1b;
+   background: #026b1b;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #00ff09;
+   background: #00ff09;
+   }
 
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
@@ -326,7 +232,7 @@
       position: static;
       max-width: 550px;
       padding: 0 20px;
-      margin-top: 200px;
+      margin-top: 125px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -368,7 +274,9 @@
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
-      margin-top: -85px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      z-index: 1;  
+      position: relative;
+      margin-top: -12px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
     }
 
     /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -422,6 +330,7 @@
         float: none;
         max-width: 40%;
         margin: 0 auto 20px;
+        position: relative;
       }
     }
 
@@ -593,7 +502,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="#road" id="rd" data-toggle="tooltip" title="The road to success"><i class="icon-road"></i></a></li>
+                <li class="active"><a href="#road" id="rd" data-toggle="tooltip" title="The road to success"><i class="icon-road"></i></a></li>
                 <li><a href="#about" id="abt" data-toggle="tooltip" title="Our Partners"><i class="icon-group"></i></a></li>
                 <li><a href="#contact" id="cntct" data-toggle="tooltip" title="Contact Us"><i class="icon-phone"></i></a></li>
                 <div class="span3 offset5">  <li><a class="btn btn-success " href="http://qa4.veloxsites.com/includes/Veloxsites/">Sign up today</a></li>
@@ -617,70 +526,69 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" src="img/c1.jpg">
-          <h2 class="gtxt">Fast</h2>
-          <p>Normally, building a website would cost several hundred dollars or several hours with drag n' drop builders, or days if you wanted to code it up. Not anymore!<br> <strong>Welcome to the future. <br> Instant Website Creation</strong> </p>
+          <h2 class="gtxt uno">Fast</h2>
+          <p class="uno">Normally, building a website would cost several hundred dollars or several hours with drag n' drop builders, or days if you wanted to code it up. Not anymore!<br> <strong>Welcome to the future. <br> Instant Website Creation</strong> </p>
         
         </div><!-- /.span4 -->
         <div class="span4 simple">
           <img class="img-circle" src="img/c2.jpg">
-          <h2 class="gtxt">Simple</h2>
-          <p>Even if you managed to build a site, you still need to worry about hosting it, getting a domain name, site E-mail and getting search engines to send you customers. <br> <strong>We take care of all that so you don't have to. </strong></p>
+          <h2 class="gtxt dos">Simple</h2>
+          <p class="dos">Even if you managed to build a site, you still need to worry about hosting it, getting a domain name, site E-mail and getting search engines to send you customers. <br> <strong>We take care of all that so you don't have to. </strong></p>
         
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="img/c3.jpg">
-          <h2 class="gtxt">Economical</h2>
-          <p>We live in a world where everyones online. You can't afford to live in the past. Websites generate revenue by attracting online consumers, and verifying the legitimacy of your business to more skeptical customers. And you can make a few bucks off of adwords as well!<br><strong>Augment your business today! </strong> </p>
+          <h2 class="gtxt tres">Economical</h2>
+          <p class="tres">We live in a world where everyones online. You can't afford to live in the past. Websites generate revenue by attracting online consumers, and verifying the legitimacy of your business to more skeptical customers. And you can make a few bucks off of adwords as well!<br><strong>Augment your business today! </strong> </p>
           
         </div><!-- /.span4 -->
-      </div><!-- /.row 
-      --><!--<p ><a class="btn btn-large btn-primary span12"  href="">Get a web-site! &raquo;</a></p> --><p style="text-align: center;">
-       <a class="circle" href="">Get a site! &rsaquo;</a></p>      
+      </div><!-- /.row -->
+<!--<p ><a class="btn btn-large btn-primary span12"  href="">Get a web-site! &raquo;</a></p> -->
+      <a class="button offset5" href="http://dev4.veloxsites.com/includes/Veloxsites/#" style="text-decoration: none">FREE TOUR!</a>
     </div> 
-    <hr class="featurette-divider">
-    <div><p> Or maybe you want to be a reseller? Or have a large number of clients who could use web-sites.</p></div>
-
+  
       <!-- START THE FEATURETTES -->  
-     <hr class="featurette-divider" data-stellar-ratio="2">
+     <hr class="featurette-divider">
   <div class="photo m1" data-stellar-background-ratio="2">
     <div class="container marketing" >
   
        
-      <div class="featurette one" >     
+      <div class="featurette one">     
       
-            <img class="featurette-image pull-right" src="img/f1.jpg"> 
-            <div class="hero-unit" data-stellar-ratio="2"> 
+            <img class="featurette-image pull-right" src="img/r1.jpg"> 
+            <div class="hero-unit"> 
         <h2 class="featurette-heading">Why?</h2>
         <p class="lead">A web presence has become a necessity in todays world. Educated customers will definitely search for online information pertaining to the situation to make better decisions. Whether it's a small law firm, or dentistry office, or a small business making wedding invitations or distributing flyers, the lack of a website renders you a second choice to your more tech-savvy competitors. <br> Websites also act to establish a level of legitimacy for the business. It can be further utilized as a marketing, revenue generating or communication channel. </p>
         </div>
        </div>
     </div>    
     </div> <!-- stellar bg -->
-    
-       <div class="container marketing" data-stellar-background-ratio="2">          
+    <hr class="featurette-divider">
+       <div class="container marketing">          
       <div class="featurette">
           
-          <img class="featurette-image pull-right" src="img/f1.jpg">
+          <img class="featurette-image pull-right" src="img/r2.jpg">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
       </div>
-    <div class="photo m2" data-stellar-background-ratio="1">
-         <div class="container marketing" >
+    <hr class="featurette-divider">
+    <div class="photo m2" data-stellar-background-ratio="1.1">
+         <div class="container marketing">
              <div class="row-fluid">
-                <div class="featurette span5" >     
+                <div class="featurette span5">     
       
-            <img class="featurette-image pull-left" src="img/f1.jpg"> 
-            <div class="hero-unit"> 
+            <img class="featurette-image pull-left" src="img/r3.jpg"> 
+            <div class="hero-unit stellar-hero"> 
         <h2 class="featurette-heading">How awesome are these websites?</h2>
         <p class="lead">We take care of everything in the back-end, including hosting, SEO, responsiveness(they're different on a phone!), browser compatibility, load-speed optimizations and such so you don't have to. And our advanced editor lets you change elements on the page itself. Easier than wordpress!
         We also help you get a domain name and company E-mail addresses! </p>
         </div>
        </div>
-                <div class="featurette span5 offset2" >
+                <div class="featurette span5 offset2">
     
-        <img class="featurette-image pull-right" src="img/f2.jpg">
-        <div class="hero-unit" >
+        <img class="featurette-image pull-right" src="img/r4.jpg">
+        <div class="hero-unit stellar-hero">
         <h2 class="featurette-heading">But what if I have trouble?</h2>
         <p class="lead">We've designed our service from the start to be simple, appealing and easy to use, choosing to not overload it with features for the sake of the consumer. But we expect the un-expected and have a team of IT professionals manning our phones in case of emergencies. </p>
            </div>
@@ -799,22 +707,32 @@
     <script src="js/waypoints.js"></script>
     <script src="js/stellar.min.js"></script>
     <script src="js/util.js"></script>
-    <script src="js/rotatebox.js"></script>
+     <script src="js/rotatebox.js"></script>
+     <script src="js/jquery.shuffleletters.js"></script>
     
     <script>
+        //hide elements and fadein
        $(function() {
+            $(".lead").hide();
             $(".featurette.one").hide();
+            $(".img-circle").hide(); 
+            $(".lead").fadeIn(2000);
+            $(".img-circle").each(function(index) {
+                $(this).fadeIn((1200+(500*index)))
+            })
           });
       !function ($) {
         $(function(){
           // carousel demo
           $('#myCarousel').carousel()
             })
-         }(window.jQuery)         
+         }(window.jQuery) 
+         
+         //make navbar pos=fixed i.e sticky when it's reached on the page
     $('.navbar-wrapper').waypoint(function() {
         $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck')
     });
-	
+
                 $("#road").hover(function() {            
                   $("#road").popover();
               });
@@ -822,10 +740,24 @@
            $('.span4.simple').waypoint(function() {
         $(".featurette.one").fadeIn(1100);
       });
+      // code for activating stellar.js i.e parallax
       $.stellar();
+      
+      //navbar tooltips
       $('#rd').tooltip();
          $('#cntct').tooltip();
             $('#abt').tooltip();
+            
+            //jShuffle letters plugin
+          $(function(){	              
+	// container is the DOM element;
+	// userText is the textbox	
+            $(".gtxt").each(function(index){
+            $(this).delay(400*index).shuffleLetters();
+            })
+            $(".carousel-caption h1").shuffleLetters();
+          });
+	
     </script>   
     <script src="js/holder.js"></script>
       </div> 
