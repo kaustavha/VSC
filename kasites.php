@@ -3,18 +3,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Bootstrap</title>
+    <title>Kasites: An instant website builder, fast, simple, easier than wordpress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Consumer Web-Site for ">
+    <meta name="author" content="Kaustav Haldar">
 
     <!-- Le styles -->
  <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
    
     <style>
 
@@ -192,6 +192,17 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
    border-top-color: #00ff09;
    background: #00ff09;
    }
+   .white{
+       z-index: 1000;
+       width:100%;  
+       padding-top: 362px !important;
+       background: #EBEBEB;
+       color: #EBEBEB;
+   }
+   .off{
+       display:none;
+   }
+   
 
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
@@ -217,14 +228,14 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
     }
 
     .carousel .item {
-      height: 500px;
+      height: 300px;
     }
     .carousel img {
       position: absolute;
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 500px;
+      height: 300px;
     }
 
     .carousel-caption {
@@ -261,7 +272,26 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
       margin-left: 10px;
       margin-right: 10px;
     }
-
+    #check, #info-call, #DONE{
+   color: #333333;
+   background: #ffffff;
+   -webkit-border-radius: 0 0 15px 15px;
+   border-radius: 0 0 15px 15px;
+   -webkit-box-shadow:  1px 1px 1px 1px rgba(250, 250, 250, .5);
+   box-shadow:  1px 1px 1px 1px rgba(250, 250, 250, .5);
+    }
+    #check ul {
+   list-style-image:url('img/bluecheck.png');
+   list-style-position: outside;
+   margin-left: 60px;
+    }
+    #check ul li { 
+    margin: 20px 0;
+    line-height: 120%;
+    }
+    #road2{
+    margin-top: -117px;
+    }
 
     /* Featurettes
     ------------------------- */
@@ -548,6 +578,7 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
     </div> 
   
       <!-- START THE FEATURETTES -->  
+      <div class="white"></div>
      <hr class="featurette-divider">
   <div class="photo m1" data-stellar-background-ratio="2">
     <div class="container marketing" >
@@ -565,12 +596,30 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
     </div> <!-- stellar bg -->
     <hr class="featurette-divider">
        <div class="container marketing">          
-      <div class="featurette">
-          
-          <img class="featurette-image pull-right" src="img/r2.jpg">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
+           <div class="featurette">
+               <img class="featurette-image pull-right" id="road2" src="img/r2.jpg">
+                    <div id="check" class="span6">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <ul>
+                                        <li>Built in SEO</li>
+                                        <li>Get found on Google, Bing, Yahoo</li>
+                                        <li>eCommerce</li>
+                                        <li>Custom domain name and emails</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="span6">
+                                    <ul>
+                                        <li>HTML5, Responsive Designs</li>
+                                        <li>Ready in seconds!</li>
+                                        <li>No design experience required!</li>
+                                        <li>Easily edit sections and add images</li>
+                                    </ul>
+                                </div>
+                            </div>            
+                        </div><!-- end check section -->
+           </div>
       </div>
     <hr class="featurette-divider">
     <div class="photo m2" data-stellar-background-ratio="1.1">
@@ -597,20 +646,19 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
          </div>
       </div>
 
-      <hr class="featurette-divider">
-    
+      <hr class="featurette-divider">   
 
-      <hr class="featurette-divider">
-      
       
       <!-- /END THE FEATURETTES -->
 
 
-      <!-- FOOTER -->
     
 
     </div><!-- end road -->
     
+    <div class="container" id="about">
+        
+    </div>
     <div class="container" id='contact'>
 
       <div class="row-fluid">   
@@ -712,15 +760,18 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
     
     <script>
         //hide elements and fadein
-       $(function() {
-            $(".lead").hide();
-            $(".featurette.one").hide();
-            $(".img-circle").hide(); 
-            $(".lead").fadeIn(2000);
-            $(".img-circle").each(function(index) {
-                $(this).fadeIn((1200+(500*index)))
-            })
-          });
+       var firstlook = [".button", ".lead", ".featurette.one", ".img-circle"];
+           $(firstlook.join(', ')).hide();
+           $(".navbar-wrapper").fadeOut(100);
+           
+       $(function() {           
+       var firstlook = [".button", ".lead", ".img-circle"];
+           $(".navbar-wrapper").fadeIn(1200);      
+           for (var i in firstlook) {
+               $(firstlook[i]).fadeIn(1200+(400*i));
+           }
+           });
+
       !function ($) {
         $(function(){
           // carousel demo
@@ -729,24 +780,26 @@ to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
          }(window.jQuery) 
          
          //make navbar pos=fixed i.e sticky when it's reached on the page
-    $('.navbar-wrapper').waypoint(function() {
-        $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck')
-    });
-
-                $("#road").hover(function() {            
-                  $("#road").popover();
-              });
-           $('.navbar').scrollspy();   
-           $('.span4.simple').waypoint(function() {
+        $('.navbar-wrapper').waypoint(function() {
+        $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck');
+        $(".white").addClass('off');
+        });
+        
+        //bootstrap navbar active class changer
+        $('.navbar').scrollspy();   
+        
+        //fade in featurette 1 when the bigass green buttons location is passed
+        $('.span4.simple').waypoint(function() {
         $(".featurette.one").fadeIn(1100);
-      });
-      // code for activating stellar.js i.e parallax
-      $.stellar();
+        });
+        
+        // code for activating stellar.js i.e parallax
+        $.stellar();
       
-      //navbar tooltips
-      $('#rd').tooltip();
-         $('#cntct').tooltip();
-            $('#abt').tooltip();
+        //navbar tooltips
+        $('#rd').tooltip();
+        $('#cntct').tooltip();
+        $('#abt').tooltip();
             
             //jShuffle letters plugin
           $(function(){	              
