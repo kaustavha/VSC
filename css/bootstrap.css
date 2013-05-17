@@ -6148,9 +6148,6 @@ a.badge:focus {
   display: none;
 }
 
-.show {
-  display: block;
-}
 
 .invisible {
   visibility: hidden;
