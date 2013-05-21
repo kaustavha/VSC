@@ -34,6 +34,7 @@
         width: 100%;    
         -webkit-transform-style: preserve-3d;
         -webkit-transition: -webkit-transform 0.7s ease-out;
+        -webkit-transform-origin: 50% 50% -125px;
         
     }
     
@@ -47,19 +48,20 @@
     }
     
     .un{
-       -webkit-transform: translateZ(125px);
+      /* -webkit-transform: translateZ(125px); */
     }
     
     .deux{
      
-      -webkit-transform: rotateX( 90deg) translateZ( 125px);
+      -webkit-transform: rotateX( 90deg) translateZ( 125px) translateY( -125px);
       
     }
     .trois{
         
-      -webkit-transform: rotateX( -90deg) translateZ( 125px);
+      -webkit-transform: rotateX( -90deg) translateZ( 125px) translateY( 125px);
         
     }
+   
     .card img{
         
         height: 250px;
@@ -378,7 +380,7 @@
            
        $(function() {           
        var firstlook = [".button", ".img-circle", "p.para"];
-           $(".navbar-wrapper").fadeIn(1200);      
+          
            for (var i in firstlook) {
                $(firstlook[i]).fadeIn(1200+(400*i));
            }
@@ -393,11 +395,12 @@
          
          //make navbar pos=fixed i.e sticky when it's reached on the page
          //make the grey bar hiding featurette one hide when navbar-wrapper div is passed
-        $('.navbar-wrapper').waypoint(function() {
+        $('.container.marketing').waypoint(function() {
         $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck');   
         $(".white").addClass('off');
+        $("#nav_stick").show();
         });
-        
+       
         //bootstrap navbar active class changer
         $('.navbar').scrollspy();   
         
@@ -426,7 +429,7 @@
           
           var angle = 0;
           $(".card").click(function(){
-              angle += 90;
+              angle += -90;
               $(".card").css("-webkit-transform", 'rotateX(' + angle + 'deg)');
           });
                   
