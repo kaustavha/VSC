@@ -17,25 +17,29 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <style>
+    #road2 {
+	height: 250px;
+        width: 250px;	
+    }
+    
 
     #wrap{
         
-      -webkit-perspective: 3000px;
+      -webkit-perspective: 2000px;
       margin-bottom:0;
      
     }
     
-    .card{
-        
+    
+    
+    .card{        
         
         position: relative;
         margin: 0 0 0 0;
         height: 250px;
         width: 100%;    
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: -webkit-transform 0.7s ease-out;
-        -webkit-transform-origin: 50% 50% -125px;
-        
+        -webkit-transition: -webkit-transform 0.7s ease-out;        
     }
     
     .side{
@@ -48,17 +52,17 @@
     }
     
     .un{
-      /* -webkit-transform: translateZ(125px); */
+       -webkit-transform: translateZ(125px); 
     }
     
     .deux{
      
-      -webkit-transform: rotateX( 90deg) translateZ( 125px) translateY( -125px);
+      -webkit-transform: rotateX( 90deg) translateZ( 125px);
       
     }
     .trois{
         
-      -webkit-transform: rotateX( -90deg) translateZ( 125px) translateY( 125px);
+      -webkit-transform: rotateX( -90deg) translateZ( 125px);
         
     }
    
@@ -67,6 +71,7 @@
         height: 250px;
         width: 100%;
         margin-bottom: 0;
+        background: repeat;
         
     }
     
@@ -101,13 +106,13 @@
         <div class="card" onclick="clicked(this)">           
              
             <div class="side un">
-                <img src="img/slide-01.jpg">
+                <img src="img/slide-01.png">
             </div>
              <div class="side deux">
-                <img src="img/slide-02.jpg">
+                <img src="img/slide-02.png">
             </div>
               <div class="side trois">
-                <img src="img/slide-03.jpg">
+                <img src="img/slide-03.png">
             </div>
           
             </div>
@@ -116,7 +121,7 @@
     
 <!-- /.carousel -->
 
-
+<div class="barone"></div>
 
  <!-- NAVBAR
     ================================================== -->
@@ -185,8 +190,8 @@
     </div> 
   
       <!-- START THE FEATURETTES -->  
-      <div class="white"><p>
-          ⇣⇣                                       ⇣⇣
+      <div class="bartwo"><p>
+        
           </p>
       </div>
      <hr class="featurette-divider">
@@ -196,7 +201,7 @@
        
       <div class="featurette one">     
       
-            <img class="featurette-image pull-right" src="img/r1.jpg"> 
+            <img class="featurette-image pull-right" src="img/r2.jpg"> 
             <div class="hero-unit"> 
         <h2 class="featurette-heading">Why?</h2>
         <p class="lead">A web presence has become a necessity in todays world. Educated customers will definitely search for online information pertaining to the situation to make better decisions. Whether it's a small law firm, or dentistry office, or a small business making wedding invitations or distributing flyers, the lack of a website renders you a second choice to your more tech-savvy competitors. <br> Websites also act to establish a level of legitimacy for the business. It can be further utilized as a marketing, revenue generating or communication channel. </p>
@@ -206,8 +211,7 @@
     </div> <!-- stellar bg -->
     <hr class="featurette-divider">
        <div class="container marketing">          
-           <div class="featurette">
-               <img class="featurette-image pull-right" id="road2" src="img/r2.jpg">
+           <div class="featurette">             
                     <div id="check" class="span6">
                             <div class="row-fluid">
                                 <div class="span6">
@@ -229,7 +233,36 @@
                                 </div>
                             </div>            
                         </div><!-- end check section -->
-           </div>
+            </div>
+            <ul class="thumbnails">
+              <li class="span2">
+                <a href="http://my.411.ca/demo/lawyer/en/" class="thumbnail">
+                  <img src="img/samples/sample_lawyer.jpeg" alt="">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="http://my.411.ca/demo/homeimprovement/en/" class="thumbnail">
+                  <img src="/img/samples/sample_home.jpeg" alt="">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="http://my.411.ca/demo/beautician/en/" class="thumbnail">
+                  <img src="/img/samples/sample_spa.jpeg" alt="">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="http://my.411.ca/demo/electrician/en/" class="thumbnail">
+                  <img src="/img/samples/sample_electrician.jpeg" alt="">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="http://my.411.ca/demo/florist/en/" class="thumbnail">
+                  <img src="/img/samples/sample_florist.jpeg" alt="">
+                </a>
+              </li>              
+            </ul>                
+ 
+         
       </div>
     <hr class="featurette-divider">
     <div class="photo m2">
@@ -238,7 +271,7 @@
              <div class="row-fluid">
                 <div class="featurette span5">     
       
-            <img class="featurette-image pull-left" src="img/r3.jpg"> 
+            <img class="featurette-image pull-left" src="img/r2.jpg"> 
             <div class="hero-unit"> 
         <h2 class="featurette-heading">How awesome are these websites?</h2>
         <p class="lead">We take care of everything in the back-end, including hosting, SEO, responsiveness(they're different on a phone!), browser compatibility, load-speed optimizations and such so you don't have to. And our advanced editor lets you change elements on the page itself. Easier than wordpress!
@@ -247,7 +280,7 @@
                 </div>
                 <div class="featurette span5 offset2">
     
-        <img class="featurette-image pull-right" src="img/r4.jpg">
+        <img class="featurette-image pull-right" src="img/r2.jpg">
         <div class="hero-unit">
         <h2 class="featurette-heading">But what if I have trouble?</h2>
         <p class="lead">We've designed our service from the start to be simple, appealing and easy to use, choosing to not overload it with features for the sake of the consumer. But we expect the un-expected and have a team of IT professionals manning our phones in case of emergencies. </p>
@@ -290,7 +323,7 @@
             <div class="control-group">
               <label class="control-label" for="input1"><i class="icon-user"></i> Full Name</label>
               <div class="controls controls-row">
-                <input type="text" name="contact_name" class="input-xxlarge" id="input1" placeholder="Cool Person">
+                <input type="text" name="contact_name" class="input-xxlarge" id="input1" placeholder="How do you spell your name again?">
               </div>
             </div>
 
@@ -375,8 +408,7 @@
     <script>
         //hide elements and fadein
        var firstlook = [".button", ".featurette.one", ".img-circle", "p.para"];
-           $(firstlook.join(', ')).hide();
-           $(".navbar-wrapper").fadeOut(100);
+           $(firstlook.join(', ')).hide();       
            
        $(function() {           
        var firstlook = [".button", ".img-circle", "p.para"];
@@ -395,10 +427,12 @@
          
          //make navbar pos=fixed i.e sticky when it's reached on the page
          //make the grey bar hiding featurette one hide when navbar-wrapper div is passed
-        $('.container.marketing').waypoint(function() {
+        $('#road').waypoint(function() {
         $("#nav_stick").toggleClass('navbar-wrapper navbar-wrapper-stuck');   
-        $(".white").addClass('off');
-        $("#nav_stick").show();
+        $(".bartwo").addClass('off'); 
+        $("#nav_stick").show();  
+        $("#nav_stick").fadeOut(1);  
+        $("#nav_stick").fadeIn(1100);  
         });
        
         //bootstrap navbar active class changer
@@ -429,7 +463,7 @@
           
           var angle = 0;
           $(".card").click(function(){
-              angle += -90;
+              angle += 90;
               $(".card").css("-webkit-transform", 'rotateX(' + angle + 'deg)');
           });
                   
